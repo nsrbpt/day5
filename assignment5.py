@@ -19,7 +19,7 @@ for req in requests:
     if req < 0:
         invalid_requests = invalid_requests + [req]
     elif req == 0:
-        pass
+     valid = valid
     elif req >= 1 and req <= 20:
         low_demand = low_demand + [req]
         valid = valid + 1
@@ -30,7 +30,13 @@ for req in requests:
         high_demand = high_demand + [req]
         valid = valid + 1
 
-fullname = "Srinivasa Rao Neelamraju"
+
+fullname = input("Enter your full name: ")
+
+name = ""
+for ch in fullname:
+    if ch != " ":
+        name = name + ch
 
 name = ""
 for ch in fullname:
@@ -40,6 +46,13 @@ for ch in fullname:
 L = 0
 for ch in name:
     L = L + 1
+
+
+if L == 22:
+    removed = len(low_demand)
+    low_demand = []
+else:
+    print("hello world")
 
 PLI = L % 3
 
