@@ -1,4 +1,11 @@
-requests = [10, 25, 60, -3, 0, 45, 80]
+requests = []
+
+n = int(input("Enter number of requests: "))
+i = 0
+while i < n:
+    value = int(input("Enter request value: "))
+    requests = requests + [value]
+    i = i + 1
 
 low_demand = []
 moderate_demand = []
